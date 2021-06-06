@@ -35,6 +35,19 @@ def main(pauser,
          loglevel=None,
          assertion_log=False,
          options=None):
+    """Run tests defined in "__main__" module.
+
+    :param pauser: Pauser instance to pause test.
+    :param filename: Filename of the state of the test,
+                     defaults to "teststate.bin"
+    :param command_after_test: A callable object, which is called after a test
+                     gets paused, defaults to None
+    :param log_filename: Filename for log, defaults to None
+    :param loglevel: Minimum log level to be saved, defaults to None
+    :param assertion_log: If True, show assertion results in log,
+                          defaults to False
+    :param options: Other options, defaults to None
+    """
     import unittest
     suite = unittest.TestLoader().loadTestsFromModule(__import__("__main__"))
     TestRunner().run(suite,
