@@ -105,7 +105,7 @@ class TestResult(object):
         self.raw_log("=" * 70)
 
     def addSubTest(self, test, subtest, err):
-        """Called at the end of a subtest.
+        u"""Called at the end of a subtest.
         'err' is None if the subtest ended successfully, otherwise it's a
         tuple of values as returned by sys.exc_info().
         """
@@ -240,7 +240,7 @@ class TestResult(object):
                    for tag in tags_for_global_scope)
 
     def _exc_info_to_string(self, err, test, indent=None):
-        """Converts a sys.exc_info()-style tuple of values into a string."""
+        u"""Convert a sys.exc_info()-style tuple of values into a string."""
         exctype, value, tb = err
         # Skip test runner traceback levels
         while tb and self._is_relevant_tb_level(tb):
