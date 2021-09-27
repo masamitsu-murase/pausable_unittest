@@ -13,6 +13,9 @@ def main(python_exe_name, python_version):
     elif python_version == "3.6":
         url = ("https://api.github.com/repos/masamitsu-murase"
                "/single_binary_stackless_python/releases/19680526")
+    elif python_version == "3.7":
+        url = ("https://api.github.com/repos/masamitsu-murase"
+               "/single_binary_stackless_python/releases/43930570")
     else:
         url = ("https://api.github.com/repos/masamitsu-murase"
                "/single_binary_stackless_python/releases/latest")
