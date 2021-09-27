@@ -1,9 +1,16 @@
 # -*- coding: utf-8 -*-
+u"""This file defines a class similar to continulet in PyPy.
+
+Note that this file does not provide complete emulation of continulet
+in PyPy, but it is good enough for this library.
+"""
 
 import stackless
 
 
 class _ContinuletInterface(object):
+    u"""Continulet-like class, used in tasklet.
+    """
     def __init__(self, channel):
         self._channel = channel
 

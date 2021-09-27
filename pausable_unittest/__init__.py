@@ -35,7 +35,7 @@ def main(pauser,
          loglevel=None,
          assertion_log=False,
          options=None):
-    """Run tests defined in "__main__" module.
+    u"""Run tests defined in "__main__" module.
 
     :param pauser: Pauser instance to pause test.
     :param filename: Filename of the state of the test,
