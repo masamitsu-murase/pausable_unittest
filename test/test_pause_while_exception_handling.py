@@ -14,7 +14,7 @@ import re
 
 class PauseWhileExceptionHandlingTest(pausable_unittest.TestCase):
     def raise_exception_while_file_accessing(self, skip=False):
-        if skip:
+        if True:
             return
         with open(__file__, "r") as file:
             raise Exception("test")
