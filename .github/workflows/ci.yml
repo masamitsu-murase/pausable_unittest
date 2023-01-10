@@ -40,7 +40,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python_version: [ 'pypy-2.7', 'pypy-3.8', 'pypy3.9', 'pypy3.10' ]
+        python_version: [ 'pypy-2.7', 'pypy-3.8-v7.3.11', 'pypy-3.9-v7.3.11' ]
 
     runs-on: ubuntu-latest
 
